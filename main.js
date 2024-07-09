@@ -1,8 +1,9 @@
-const http = require('http');
+const http = require("http");
 
-// TODO: Create an HTTP server
+let server = http.createServer((req, res) => {
+  res.end("Hello, world!");
+});
 
-// TODO: Listen on port 3000
-
-// DO NOT EDIT BELOW THIS LINE (Uncomment it once you are done with your code)
-
+server.listen(3000, () => {
+  console.log("Server is listening on the port");
+});
